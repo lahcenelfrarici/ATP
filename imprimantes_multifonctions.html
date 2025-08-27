@@ -1,375 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ANFA PRIME HOSPITAL - Owl Carousel</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      overflow-x: hidden;
-    }
-
-    /* Header inside slider */
-    .header-inside {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-      padding: 20px 0;
-      transition: all 0.5s ease;
-    }
-
-    .header-inside.scrolled {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 15px 0;
-    }
-
-    .navbar-brand {
-      font-weight: 700;
-      color: white;
-      font-size: 28px;
-    }
-
-    .nav-link {
-      color: rgba(255, 255, 255, 0.9);
-      font-weight: 500;
-      margin: 0 12px;
-      transition: all 0.3s;
-      position: relative;
-    }
-
-    .nav-link:after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background-color: #fff;
-      transition: width 0.3s;
-    }
-
-    .nav-link:hover {
-      color: white;
-    }
-
-    .nav-link:hover:after {
-      width: 100%;
-    }
-
-    /* Owl Carousel Customization */
-    .owl-carousel .owl-stage-outer {
-      overflow: visible;
-    }
-
-    .owl-slide {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .slide-1 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-    }
-
-    .slide-2 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-    }
-
-    .slide-3 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-    }
-
-    .slide-content {
-      color: white;
-      max-width: 800px;
-      margin-left: 10%;
-      padding: 20px;
-    }
-
-    .slide-title {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 1s ease;
-    }
-
-    .slide-subtitle {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 1s ease 0.3s;
-    }
-
-    .slide-text {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 1s ease 0.6s;
-    }
-
-    .active .slide-title,
-    .active .slide-subtitle,
-    .active .slide-text {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Owl Nav Customization */
-    .owl-nav {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
-      display: flex;
-      justify-content: space-between;
-      padding: 0 30px;
-      pointer-events: none;
-    }
-
-    .owl-prev,
-    .owl-next {
-      width: 50px;
-      height: 50px;
-      background: rgba(255, 255, 255, 0.2) !important;
-      border-radius: 50% !important;
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-      color: white !important;
-      font-size: 24px !important;
-      transition: all 0.3s;
-      pointer-events: auto;
-    }
-
-    .owl-prev:hover,
-    .owl-next:hover {
-      background: rgba(255, 255, 255, 0.4) !important;
-    }
-
-    /* Owl Dots Customization */
-    .owl-dots {
-      position: absolute;
-      bottom: 30px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .owl-dot {
-      width: 14px;
-      height: 14px;
-      background: rgba(255, 255, 255, 0.5) !important;
-      border-radius: 50%;
-      transition: all 0.3s;
-    }
-
-    .owl-dot.active {
-      background: white !important;
-      transform: scale(1.2);
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 992px) {
-      .slide-content {
-        margin-left: 5%;
-      }
-
-      .slide-title {
-        font-size: 2.8rem;
-      }
-
-      .slide-subtitle {
-        font-size: 1.8rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .header-inside {
-        padding: 15px 0;
-      }
-
-      .slide-title {
-        font-size: 2.2rem;
-      }
-
-      .slide-subtitle {
-        font-size: 1.5rem;
-      }
-
-      .slide-text {
-        font-size: 1rem;
-      }
-
-      .owl-prev,
-      .owl-next {
-        width: 40px;
-        height: 40px;
-        font-size: 18px !important;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .slide-content {
-        text-align: center;
-        margin: 0 auto;
-      }
-
-      .slide-title {
-        font-size: 2rem;
-      }
-
-      .slide-subtitle {
-        font-size: 1.3rem;
-      }
-
-      .navbar-brand {
-        font-size: 22px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- Header Inside Slider -->
-  <header class="header-inside">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">ATP</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Agence</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Carrières</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contrôle</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Owl Carousel Slider -->
-  <div class="owl-carousel owl-theme">
-    <!-- Slide 1 -->
-    <div class="owl-slide slide-1">
-      <div class="slide-content">
-        <h1 class="slide-title">ANFA PRIME HOSPITAL</h1>
-        <h2 class="slide-subtitle">Construire vite. Construire juste.</h2>
-        <p class="slide-text">Construire pour le Maroc.</p>
-      </div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="owl-slide slide-2">
-      <div class="slide-content">
-        <h1 class="slide-title">TECHNOLOGIE DE POINTE</h1>
-        <h2 class="slide-subtitle">Médecine de précision.</h2>
-        <p class="slide-text">Soins d'excellence pour tous.</p>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="owl-slide slide-3">
-      <div class="slide-content">
-        <h1 class="slide-title">INNOVATION MÉDICALE</h1>
-        <h2 class="slide-subtitle">Recherche et développement.</h2>
-        <p class="slide-text">L'avenir de la santé au Maroc.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-  <!-- <script>
-    $(document).ready(function () {
-      // Initialize Owl Carousel
-      $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 6000,
-        autoplayHoverPause: true,
-        smartSpeed: 1000,
-        nav: true,
-        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
-        dots: true,
-        animateOut: 'fadeOut',
-        onInitialized: startAnimation,
-        onTranslate: resetAnimation,
-        onTranslated: startAnimation
-      });
-
-      // Start animation for active slide
-      function startAnimation(event) {
-        var activeSlide = $('.owl-item.active').find('.owl-slide');
-        activeSlide.find('.slide-title, .slide-subtitle, .slide-text').css({
-          'opacity': '1',
-          'transform': 'translateY(0)'
-        });
-      }
-
-      // Reset animation for other slides
-      function resetAnimation(event) {
-        var allSlides = $('.owl-slide');
-        allSlides.find('.slide-title, .slide-subtitle, .slide-text').css({
-          'opacity': '0',
-          'transform': 'translateY(30px)'
-        });
-      }
-
-      // Header scroll effect
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 50) {
-          $('.header-inside').addClass('scrolled');
-        } else {
-          $('.header-inside').removeClass('scrolled');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Partenaires</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+            background-color: #f8f9fa;
         }
-      });
+        
+        .section--5 {
+            padding: 80px 0;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 50px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        .partner-item {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 15px;
+        }
+        
+        .partner-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .partner-logo {
+            height: 80px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .partner-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .partner-description {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .owl-nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .owl-prev, .owl-next {
+            background: #2c3e50 !important;
+            color: white !important;
+            width: 50px;
+            height: 50px;
+            border-radius: 50% !important;
+            margin: 0 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .owl-prev {
+            left: -60px;
+        }
+        
+        .owl-next {
+            right: -60px;
+        }
+        
+        .owl-dots {
+            margin-top: 30px;
+        }
+        
+        .owl-dot span {
+            width: 12px !important;
+            height: 12px !important;
+        }
+        
+        .owl-dot.active span {
+            background: #2c3e50 !important;
+        }
+        
+        .header {
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .nav-link {
+            color: #495057;
+            font-weight: 500;
+            margin-left: 25px;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #2c3e50;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding: 40px 0;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: #1abc9c;
+        }
+        
+        @media (max-width: 768px) {
+            .owl-prev {
+                left: 10px;
+            }
+            
+            .owl-next {
+                right: 10px;
+            }
+            
+            .partner-item {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">ARCHITECTURE</div>
+                <div class="d-none d-md-block">
+                    <a href="#" class="nav-link">Accueil</a>
+                    <a href="#" class="nav-link">Projets</a>
+                    <a href="#" class="nav-link">Partenaires</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="section--5">
+            <div class="container">
+                <h2 class="section-title">Nos partenaires</h2>
+                
+                <div class="owl-carousel owl-theme">
+                    <!-- Partner 1 -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <h3 style="font-weight: 800; color: #2c3e50; font-size: 28px;">ONCF</h3>
+                        </div>
+                        <div class="partner-name">ONCF</div>
+                        <p class="partner-description">Partenaire de premier plan dans le domaine des transports et infrastructures.</p>
+                    </div>
+                    
+                    <!-- Partner 2 -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <h3 style="font-weight: 800; color: #2c3e50; font-size: 28px;">AKDITAL</h3>
+                        </div>
+                        <div class="partner-name">AKDITAL</div>
+                        <p class="partner-description">Des zones de la bois. Spécialiste en aménagement et développement durable.</p>
+                    </div>
+                    
+                    <!-- Partner 3 -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <h3 style="font-weight: 800; color: #2c3e50; font-size: 28px;">AKDITAL</h3>
+                        </div>
+                        <div class="partner-name">AKDITAL</div>
+                        <p class="partner-description">Mais un autre site autoritaire. Expertise en gestion de projets complexes.</p>
+                    </div>
+                    
+                    <!-- Partner 4 -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <h3 style="font-weight: 800; color: #2c3e50; font-size: 28px;">GROUPE XYZ</h3>
+                        </div>
+                        <div class="partner-name">GROUPE XYZ</div>
+                        <p class="partner-description">Innovation et technologie au service de l'architecture moderne.</p>
+                    </div>
+                    
+                    <!-- Partner 5 -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <h3 style="font-weight: 800; color: #2c3e50; font-size: 28px;">CONSTRUCTA</h3>
+                        </div>
+                        <div class="partner-name">CONSTRUCTA</div>
+                        <p class="partner-description">Bâtisseur de confiance depuis plus de 40 ans.</p>
+                    </div>
+                    
+                    <!-- Partner 6 -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <h3 style="font-weight: 800; color: #2c3e50; font-size: 28px;">URBANPRO</h3>
+                        </div>
+                        <div class="partner-name">URBANPRO</div>
+                        <p class="partner-description">Solutions urbaines innovantes pour les villes de demain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>ARCHITECTURE</h5>
+                    <p>Créateurs d'espaces inspirants depuis 1995.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p>123 Avenue de l'Architecture<br>75001 Paris, France<br>contact@architecture.fr</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Suivez-nous</h5>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>© 2023 ARCHITECTURE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 
-
-
-
-    });
-  </script> -->
-
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
