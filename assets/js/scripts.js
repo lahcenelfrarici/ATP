@@ -1,4 +1,8 @@
 (function ($) {
+  if ($('.banner_bread').length) {
+    // If it exists, add the 'regle_header' class to the <header> tag
+    $('header').addClass('regle_header');
+  }
   $('.section--5 .owl-carousel').owlCarousel({
     loop: true,
     margin: 30,
