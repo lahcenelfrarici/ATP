@@ -651,6 +651,16 @@ header.header-inside.scrolled button.btn.btn-contact {
   font-weight: 400;
   line-height: 36px;
   /* 200% */
+  border-radius: 100px;
+  border: 1px solid #2B2B2B;
+  background: #FAFAFA;
+  width: 331px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  margin: 0 !important;
+  padding: 0 20px !important;
+  gap: 7px;
 }
 
 .project-description {
@@ -1854,14 +1864,7 @@ section.carriere .slide-content a.btn.btn-discover {
 .banner-last #slider--animate .owl-slide .slide-content {
     padding-bottom: 3%;
 }
-        .Project_detail_page {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-            border-radius: 10px;
-        }
+
         
         .Project_detail_page .project-header {
             margin-bottom: 40px;
@@ -1875,6 +1878,16 @@ section.carriere .slide-content a.btn.btn-discover {
             margin-bottom: 15px;
             position: relative;
             padding-bottom: 15px;
+            color: #8F8C8C;
+            font-family: Electrolize;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 137.5% */
+            letter-spacing: 0.5px;
+            border-radius: 100px;
+            border: 1px solid #2B2B2B;
+            background: #FAFAFA;
         }
         
         .Project_detail_page .project-title::after {
@@ -1886,15 +1899,18 @@ section.carriere .slide-content a.btn.btn-discover {
             height: 5px;
             background: linear-gradient(90deg, #3498db, #e74c3c);
             border-radius: 3px;
+            opacity: 0;
         }
         
         .Project_detail_page .project-subtitle {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #7f8c8d;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 30px;
+            color: #595959;
+            text-align: justify;
+            font-family: Electrolize;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            margin-top: 20px;
         }
         
         .Project_detail_page .project-content {
@@ -1918,7 +1934,7 @@ section.carriere .slide-content a.btn.btn-discover {
         .Project_detail_page .project-image {
             width: 100%;
             height: 350px;
-            background: linear-gradient(145deg, #e6e6e6, #fff);
+            background: #F3F3F3;
             border-radius: 10px;
             overflow: hidden;
             display: flex;
@@ -1948,6 +1964,8 @@ section.carriere .slide-content a.btn.btn-discover {
         
         .Project_detail_page .project-specs {
             margin-bottom: 40px;
+            background: #F3F3F3;
+            padding: 30px;
         }
         
         .Project_detail_page .specs-title {
@@ -1958,6 +1976,13 @@ section.carriere .slide-content a.btn.btn-discover {
             position: relative;
             display: inline-block;
             padding-bottom: 8px;
+            color: #000;
+            font-family: Electrolize;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 44px; /* 157.143% */
+            letter-spacing: -1px;
         }
         
         .Project_detail_page .specs-title::after {
@@ -1965,10 +1990,10 @@ section.carriere .slide-content a.btn.btn-discover {
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 50px;
+            width: 60px;
             height: 3px;
-            background: #e74c3c;
-            border-radius: 3px;
+            background: #600100;
+            border-radius: 2px;
         }
         
         .Project_detail_page .specs-list {
@@ -1980,6 +2005,13 @@ section.carriere .slide-content a.btn.btn-discover {
             border-bottom: 1px solid #eee;
             font-size: 1.1rem;
             display: flex;
+            color: #000;
+            font-family: Electrolize;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -0.6px;
         }
         
         .Project_detail_page .specs-list li:last-child {
@@ -1989,11 +2021,23 @@ section.carriere .slide-content a.btn.btn-discover {
         .Project_detail_page .specs-label {
             font-weight: 600;
             color: #2c3e50;
-            min-width: 140px;
+            color: #600100;
+            font-family: Electrolize;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 160% */
+            letter-spacing: -0.6px;
         }
         
         .Project_detail_page .specs-value {
-            color: #555;
+            color: #000;
+            font-family: Electrolize;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -0.6px;
         }
         
         .Project_detail_page .related-project {
@@ -2085,3 +2129,42 @@ section.carriere .slide-content a.btn.btn-discover {
                 font-size: 1.6rem;
             }
         }
+        .Project_detail_page_banner #slider--animate .slide-content h1, .Project_detail_page_banner #slider--animate .slide-content p,.Project_detail_page_banner #slider--animate .slide-content a {
+    text-align: left !important;
+    margin-left: 0;
+}
+
+.Project_detail_page .specs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.Project_detail_page .specs-list li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.Project_detail_page .specs-list li::before {
+  content: "•";
+  color: #000; /* dark red similar to your example */
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+
+section.Project_detail_page .container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.Project_detail_page .container div {
+    width: 49%;
+    /* background: #F3F3F3; */
+}
