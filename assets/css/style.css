@@ -992,13 +992,13 @@ header.header-inside.regle_header.scrolled span {
 
 /* Notre équipe section styling */
 .notre-equipe {
-  padding: 80px 0;
-  background-color: #fff;
+  background: #F3F3F3;
+  margin: 40px 0 0 0;
 }
 
 .notre-equipe-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 34px;
 }
 
 .notre-equipe-title {
@@ -1022,10 +1022,8 @@ header.header-inside.regle_header.scrolled span {
 }
 
 .notre-equipe-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .notre-equipe-text {
@@ -1039,20 +1037,18 @@ header.header-inside.regle_header.scrolled span {
 }
 
 .notre-equipe-highlight {
-  color: #e74c3c;
+
   font-weight: 600;
 }
 
 .notre-equipe-image {
-  background: linear-gradient(145deg, #e6e6e6, #fff);
   border-radius: 10px;
   overflow: hidden;
-  height: 400px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #e74c3c;
+  margin-top: 20px;
 }
 
 .notre-equipe-image-placeholder {
@@ -1311,14 +1307,7 @@ section.carriere .slide-content {
   margin-right: 10%;
 }
 
-.pourquoi-nous-rejoindre {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 40px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
+
 
 .pourquoi-nous-rejoindre h1 {
   font-size: 2.8rem;
@@ -1339,10 +1328,10 @@ section.carriere .slide-content {
 }
 
 .pourquoi-nous-rejoindre .benefits-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .pourquoi-nous-rejoindre .benefit-card {
@@ -1354,6 +1343,12 @@ section.carriere .slide-content {
   height: 100%;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  background: #F3F3F3;
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+  gap: 0 30px;
 }
 
 .pourquoi-nous-rejoindre .benefit-card:hover {
@@ -1372,19 +1367,34 @@ section.carriere .slide-content {
   justify-content: center;
   margin-bottom: 20px;
   font-size: 1.5rem;
+  border-radius: 10px;
+  background: #600100;
+  width: 70px;
+  height: 70px;
 }
 
 .pourquoi-nous-rejoindre .benefit-title {
   font-size: 1.5rem;
   color: #2c3e50;
-  margin-bottom: 15px;
   font-weight: 600;
+  color: #000;
+  font-family: Electrolize;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 114.286% */
 }
 
 .pourquoi-nous-rejoindre .benefit-description {
   color: #555;
   font-size: 1.05rem;
   line-height: 1.6;
+  color: #000;
+  font-family: Electrolize;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
 }
 
 .pourquoi-nous-rejoindre .section-divider {
@@ -1521,7 +1531,7 @@ section.carriere .slide-content {
   flex-wrap: wrap;
   gap: 8px;
 }
-
+section.notre-equipe p { color: #595959; text-align: justify; font-family: Electrolize; font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px; }
 .job-skills li {
   background: #fff;
   border: 1px solid #ccc;
@@ -1531,19 +1541,16 @@ section.carriere .slide-content {
 }
  .notre-histoire {
             width: 100%;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 40px 30px;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            background: #F3F3F3;
         }
         
         .notre-histoire-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 0;
         }
-        
+        section.notre-histoire .title--sc h2, section.notre-histoire .title--sc p {
+    text-align: center;
+}
         .notre-histoire-title {
             font-size: 2.8rem;
             font-weight: 700;
@@ -1575,11 +1582,14 @@ section.carriere .slide-content {
         /* Owl Carousel Customization */
         .notre-histoire .owl-carousel {
             position: relative;
+            width: 796.441px;
+            margin: auto;
         }
         
         .notre-histoire .owl-stage {
             display: flex;
             padding: 30px 0;
+            align-items: center;
         }
         
         .notre-histoire .owl-item {
@@ -1588,16 +1598,29 @@ section.carriere .slide-content {
         }
         
         .notre-histoire .timeline-item {
-            background: #fff;
-            border-radius: 12px;
+            background: transparent;
+            border-radius: 90px;
             padding: 25px;
             width: 350px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #3498db;
+            border: 3px solid #600100;
             transition: all 0.3s ease;
             margin: 10px 15px;
             position: relative;
             overflow: hidden;
+            width: 140.613px;
+            height: 140.613px;
+            stroke-width: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5D0000;
+            text-align: center;
+            font-family: Electrolize;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29.25px; /* 97.5% */
         }
         
         .notre-histoire .timeline-item::before {
@@ -1614,22 +1637,28 @@ section.carriere .slide-content {
         
         .notre-histoire .timeline-item:hover {
             transform: translateY(-8px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
         }
         
         .notre-histoire .timeline-item:hover::before {
-            opacity: 1;
+            opacity: 0;
         }
         
         .notre-histoire .timeline-year {
             font-size: 1.8rem;
             font-weight: 700;
             color: #3498db;
-            margin-bottom: 15px;
+            margin-bottom: 0;
             display: inline-block;
             padding: 5px 15px;
-            background: rgba(52, 152, 219, 0.1);
             border-radius: 30px;
+            color: #5D0000;
+            text-align: center;
+            font-family: Electrolize;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29.25px; /* 97.5% */
+            background: transparent;
         }
         
         .notre-histoire .timeline-content {
@@ -1637,27 +1666,31 @@ section.carriere .slide-content {
             font-size: 1.05rem;
             line-height: 1.7;
             padding: 5px 0;
+            display: none;
         }
         
         .notre-histoire .owl-nav {
             position: absolute;
-            top: -70px;
+            top: 0;
             right: 0;
             display: flex;
             gap: 10px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            bottom: 0;
+            gap: 0 30px;
         }
         
         .notre-histoire .owl-nav button {
             width: 45px;
             height: 45px;
             border-radius: 50%;
-            background: #fff !important;
             color: #3498db !important;
             font-size: 22px !important;
             display: flex !important;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
         
@@ -1791,3 +1824,264 @@ section.carriere .slide-content a.btn.btn-discover {
     min-width: 100%;
   }
 }
+.content--our {
+    width: 70%;
+}
+.owl-item.active.center .timeline-item {
+    width: 185.621px;
+    height: 185.621px;
+    background: #600100;
+}
+
+.owl-item.active.center .timeline-item .timeline-year {
+    color: #fff;
+    color: #FFF;
+    text-align: center;
+    font-family: Electrolize;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.25px; /* 73.125% */
+}
+.notre-histoire .owl-nav button {
+    margin: 0 -10px !important;
+}
+
+.banner-last #slider--animate .owl-slide {
+    height: 307px;
+}
+
+.banner-last #slider--animate .owl-slide .slide-content {
+    padding-bottom: 3%;
+}
+        .Project_detail_page {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+        }
+        
+        .Project_detail_page .project-header {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .Project_detail_page .project-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .Project_detail_page .project-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, #3498db, #e74c3c);
+            border-radius: 3px;
+        }
+        
+        .Project_detail_page .project-subtitle {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 30px;
+        }
+        
+        .Project_detail_page .project-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .Project_detail_page .project-description {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .Project_detail_page .project-description p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .Project_detail_page .project-image {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(145deg, #e6e6e6, #fff);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .Project_detail_page .project-image-placeholder {
+            text-align: center;
+            color: #7f8c8d;
+            padding: 20px;
+        }
+        
+        .Project_detail_page .project-image-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #bdc3c7;
+        }
+        
+        .Project_detail_page .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3498db, #e74c3c, transparent);
+            margin: 40px 0;
+            border: none;
+        }
+        
+        .Project_detail_page .project-specs {
+            margin-bottom: 40px;
+        }
+        
+        .Project_detail_page .specs-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        
+        .Project_detail_page .specs-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #e74c3c;
+            border-radius: 3px;
+        }
+        
+        .Project_detail_page .specs-list {
+            list-style: none;
+        }
+        
+        .Project_detail_page .specs-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+            display: flex;
+        }
+        
+        .Project_detail_page .specs-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .Project_detail_page .specs-label {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 140px;
+        }
+        
+        .Project_detail_page .specs-value {
+            color: #555;
+        }
+        
+        .Project_detail_page .related-project {
+            background: linear-gradient(135deg, #2c3e50, #1a2530);
+            padding: 30px;
+            border-radius: 10px;
+            color: #fff;
+            margin-top: 50px;
+        }
+        
+        .Project_detail_page .related-project-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .Project_detail_page .related-project-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .Project_detail_page .related-project-image {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+        .Project_detail_page .related-project-text {
+            flex: 1;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .Project_detail_page .project-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .Project_detail_page .project-title {
+                font-size: 2.4rem;
+            }
+            
+            .Project_detail_page .project-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .Project_detail_page {
+                padding: 15px;
+            }
+            
+            .Project_detail_page .project-title {
+                font-size: 2.2rem;
+            }
+            
+            .Project_detail_page .specs-list li {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .Project_detail_page .specs-label {
+                min-width: auto;
+            }
+            
+            .Project_detail_page .related-project-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .Project_detail_page .project-title {
+                font-size: 2rem;
+            }
+            
+            .Project_detail_page .project-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .Project_detail_page .specs-title {
+                font-size: 1.6rem;
+            }
+        }

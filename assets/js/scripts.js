@@ -7,9 +7,14 @@
                 loop: true,
                 margin: 25,
                 nav: true,
-                navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-                dots: true,
+      navText: [
+       
+        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34" fill="none"><path d="M17.4479 2.58854L3.28125 16.7552L17.4479 30.9219" stroke="#5D0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+         '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34" fill="none"><path d="M2.55599 2.58854L16.7227 16.7552L2.55599 30.9219" stroke="#5D0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    ],
+                dots: false,
                 autoplay: true,
+                center:true,
                 autoplayTimeout: 5000,
                 autoplayHoverPause: true,
                 responsive: {
