@@ -861,10 +861,23 @@ section.banner_bread .slide-content h1 {
 section.banner_bread {
   padding: 0;
 }
+
 .regle_header {
-    position: absolute !important;
+  position: absolute !important;
 }
-.regle_header a.navbar-brand.logo__2 { display: none !important; } .regle_header a.navbar-brand.logo__1 { display: block !important; }body:not(.path-frontpage) header.header-inside.regle_header.scrolled a.navbar-brand.logo__1 { display: block !important; }
+
+.regle_header a.navbar-brand.logo__2 {
+  display: none !important;
+}
+
+.regle_header a.navbar-brand.logo__1 {
+  display: block !important;
+}
+
+body:not(.path-frontpage) header.header-inside.regle_header.scrolled a.navbar-brand.logo__1 {
+  display: block !important;
+}
+
 /* Ajout du SVG via le pseudo-élément ::after */
 .sc---prj-2-filter .col-md-6 .filter-option::after {
   content: "";
@@ -939,346 +952,474 @@ section.banner_bread {
   font-weight: 400;
   line-height: 29.25px;
 }
+
 body:not(.path-frontpage) .regle_header ul.navbar-nav.ms-auto {
 
-    background: transparent;
+  background: transparent;
 }
-section.banner_bread #slider--animate .owl-slide img { height: 100%; width: 100%; object-fit: cover; } section.banner_bread .slide-content h1 { opacity: 1 !important; margin-bottom: 20px !important; }section.banner_bread .slide-content { flex-direction: column; justify-content: end; text-align: left; position: absolute !important; left: 0; }
+
+section.banner_bread #slider--animate .owl-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+section.banner_bread .slide-content h1 {
+  opacity: 1 !important;
+  margin-bottom: 20px !important;
+}
+
+section.banner_bread .slide-content {
+  flex-direction: column;
+  justify-content: end;
+  text-align: left;
+  position: absolute !important;
+  left: 0;
+  right: 0;
+}
+
+section.carriere .slide-content p {
+  width: 100%;
+}
+
 header.header-inside.regle_header.scrolled span {
-    color: #600100 !important;
+  color: #600100 !important;
 }
+
 .regle_header button.btn.btn-contact span {
-    color: #fff;
+  color: #fff;
 }
-   .contact_form * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .contact_form {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .contact_form h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            width: 100%;
-        }
-        
-        .contact_form > p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 30px;
-            width: 100%;
-        }
-        
-        .contact_form .form-container {
-            flex: 1;
-            min-width: 300px;
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        }
-        
-        .contact_form .info-container {
-            flex: 1;
-            min-width: 300px;
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        }
-        
-        .contact_form .form-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .contact_form .form-group {
-            flex: 1;
-            min-width: 250px;
-        }
-        
-        .contact_form .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        .contact_form .form-group input,
-        .contact_form .form-group textarea,
-        .contact_form .form-group select {
-            width: 100%;
-            padding: 14px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        .contact_form .form-group input:focus,
-        .contact_form .form-group textarea:focus,
-        .contact_form .form-group select:focus {
-            border-color: #600100;
-            outline: none;
-            box-shadow: 0 0 0 2px rgba(96, 1, 0, 0.1);
-        }
-        
-        .contact_form .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .contact_form .btn-submit {
-            background-color: #600100;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .contact_form .btn-submit:hover {
-            background-color: #4a0100;
-        }
-        
-        .contact_form .contact-info {
-            margin-bottom: 30px;
-        }
-        
-        .contact_form .contact-info h2 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        
-        .contact_form .info-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-        
-        .contact_form .info-icon {
-            background-color: #600100;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-        
-        .contact_form .info-content h3 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            color: #2c3e50;
-        }
-        
-        .contact_form .info-content p {
-            color: #555;
-        }
-        
-        .contact_form .social-section {
-            margin-top: 40px;
-        }
-        
-        .contact_form .social-section h2 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        
-        .contact_form .social-icons {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .contact_form .social-icon {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: #f1f1f1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #600100;
-            font-size: 1.2rem;
-            transition: all 0.3s;
-        }
-        
-        .contact_form .social-icon:hover {
-            background-color: #600100;
-            color: white;
-            transform: translateY(-3px);
-        }
-        
-        .contact_form .map-section {
-            margin-top: 40px;
-        }
-        
-        .contact_form .map-section h2 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        
-        .contact_form .map-placeholder {
-            height: 250px;
-            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6c757d;
-            font-weight: 600;
-        }
-        
-        .contact_form .pupp-scale {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-        section.carriere .slide-content {
-    margin: auto;
-    max-width: 100% !important;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+
+/* Notre équipe section styling */
+.notre-equipe {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.notre-equipe-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.notre-equipe-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.notre-equipe-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #e74c3c;
+}
+
+.notre-equipe-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.notre-equipe-text {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.notre-equipe-text p {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.notre-equipe-highlight {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.notre-equipe-image {
+  background: linear-gradient(145deg, #e6e6e6, #fff);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #e74c3c;
+}
+
+.notre-equipe-image-placeholder {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 20px;
+}
+
+.notre-equipe-image-placeholder i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #bdc3c7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .notre-equipe-content {
+    grid-template-columns: 1fr;
+  }
+
+  .notre-equipe-image {
+    height: 300px;
+    order: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .notre-equipe-title {
+    font-size: 2rem;
+  }
+
+  .notre-equipe-text {
+    font-size: 1rem;
+  }
+}
+
+.contact_form * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact_form {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact_form h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.contact_form>p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.contact_form .form-container {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact_form .info-container {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact_form .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact_form .form-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact_form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.contact_form .form-group input,
+.contact_form .form-group textarea,
+.contact_form .form-group select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact_form .form-group input:focus,
+.contact_form .form-group textarea:focus,
+.contact_form .form-group select:focus {
+  border-color: #600100;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(96, 1, 0, 0.1);
+}
+
+.contact_form .form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact_form .btn-submit {
+  background-color: #600100;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact_form .btn-submit:hover {
+  background-color: #4a0100;
+}
+
+.contact_form .contact-info {
+  margin-bottom: 30px;
+}
+
+.contact_form .contact-info h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact_form .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact_form .info-icon {
+  background-color: #600100;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.contact_form .info-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.contact_form .info-content p {
+  color: #555;
+}
+
+.contact_form .social-section {
+  margin-top: 40px;
+}
+
+.contact_form .social-section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact_form .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.contact_form .social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #600100;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.contact_form .social-icon:hover {
+  background-color: #600100;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.contact_form .map-section {
+  margin-top: 40px;
+}
+
+.contact_form .map-section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact_form .map-placeholder {
+  height: 250px;
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.contact_form .pupp-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+section.carriere .slide-content {
+  margin: auto;
+  max-width: 100% !important;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .pourquoi-nous-rejoindre {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 40px 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .pourquoi-nous-rejoindre h1 {
-            font-size: 2.8rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: 700;
-        }
-        
-        .pourquoi-nous-rejoindre > p {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 50px;
-            text-align: center;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .pourquoi-nous-rejoindre .benefits-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .pourquoi-nous-rejoindre .benefit-card {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .pourquoi-nous-rejoindre .benefit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-        }
-        
-        .pourquoi-nous-rejoindre .benefit-icon {
-            background-color: #600100;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-        
-        .pourquoi-nous-rejoindre .benefit-title {
-            font-size: 1.5rem;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .pourquoi-nous-rejoindre .benefit-description {
-            color: #555;
-            font-size: 1.05rem;
-            line-height: 1.6;
-        }
-        
-        .pourquoi-nous-rejoindre .section-divider {
-            height: 3px;
-            background: linear-gradient(90deg, transparent, #600100, transparent);
-            width: 100px;
-            margin: 30px auto;
-            border: none;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .pourquoi-nous-rejoindre {
-                padding: 30px 15px;
-            }
-            
-            .pourquoi-nous-rejoindre h1 {
-                font-size: 2.2rem;
-            }
-            
-            .pourquoi-nous-rejoindre > p {
-                font-size: 1.1rem;
-            }
-            
-            .pourquoi-nous-rejoindre .benefits-container {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .pourquoi-nous-rejoindre .benefit-card {
-                padding: 20px;
-            }
-        }
-        .postes-ouverts {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.pourquoi-nous-rejoindre h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.pourquoi-nous-rejoindre>p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pourquoi-nous-rejoindre .benefits-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pourquoi-nous-rejoindre .benefit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pourquoi-nous-rejoindre .benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.pourquoi-nous-rejoindre .benefit-icon {
+  background-color: #600100;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.pourquoi-nous-rejoindre .benefit-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.pourquoi-nous-rejoindre .benefit-description {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.pourquoi-nous-rejoindre .section-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #600100, transparent);
+  width: 100px;
+  margin: 30px auto;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pourquoi-nous-rejoindre {
+    padding: 30px 15px;
+  }
+
+  .pourquoi-nous-rejoindre h1 {
+    font-size: 2.2rem;
+  }
+
+  .pourquoi-nous-rejoindre>p {
+    font-size: 1.1rem;
+  }
+
+  .pourquoi-nous-rejoindre .benefits-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pourquoi-nous-rejoindre .benefit-card {
+    padding: 20px;
+  }
+}
+
+.postes-ouverts {
   padding: 40px 0;
   font-family: Arial, sans-serif;
 }
@@ -1311,7 +1452,8 @@ header.header-inside.regle_header.scrolled span {
 }
 
 .job-header {
-  background: #7b0000; /* Dark red */
+  background: #7b0000;
+  /* Dark red */
   color: #fff;
   padding: 16px;
   display: flex;
@@ -1387,6 +1529,241 @@ header.header-inside.regle_header.scrolled span {
   padding: 4px 10px;
   font-size: 13px;
 }
+ .notre-histoire {
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .notre-histoire-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .notre-histoire-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .notre-histoire-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, #e74c3c, #3498db);
+            border-radius: 3px;
+        }
+        
+        .notre-histoire-subtitle {
+            font-size: 1.3rem;
+            color: #7f8c8d;
+            margin-top: 25px;
+            font-weight: 500;
+        }
+        
+        /* Owl Carousel Customization */
+        .notre-histoire .owl-carousel {
+            position: relative;
+        }
+        
+        .notre-histoire .owl-stage {
+            display: flex;
+            padding: 30px 0;
+        }
+        
+        .notre-histoire .owl-item {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .notre-histoire .timeline-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            width: 350px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #3498db;
+            transition: all 0.3s ease;
+            margin: 10px 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .notre-histoire .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #3498db, #e74c3c);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .notre-histoire .timeline-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .notre-histoire .timeline-item:hover::before {
+            opacity: 1;
+        }
+        
+        .notre-histoire .timeline-year {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3498db;
+            margin-bottom: 15px;
+            display: inline-block;
+            padding: 5px 15px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 30px;
+        }
+        
+        .notre-histoire .timeline-content {
+            color: #2c3e50;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            padding: 5px 0;
+        }
+        
+        .notre-histoire .owl-nav {
+            position: absolute;
+            top: -70px;
+            right: 0;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .notre-histoire .owl-nav button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #fff !important;
+            color: #3498db !important;
+            font-size: 22px !important;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .notre-histoire .owl-nav button:hover {
+            background: #3498db !important;
+            color: #fff !important;
+            transform: scale(1.1);
+        }
+        
+        .notre-histoire .owl-dots {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .notre-histoire .owl-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #dfe6e9 !important;
+            transition: all 0.3s ease;
+        }
+        
+        .notre-histoire .owl-dot.active {
+            background: #3498db !important;
+            transform: scale(1.3);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .notre-histoire-title {
+                font-size: 2.4rem;
+            }
+            
+            .notre-histoire-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .notre-histoire {
+                padding: 30px 20px;
+            }
+            
+            .notre-histoire-title {
+                font-size: 2.2rem;
+            }
+            
+            .notre-histoire-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .notre-histoire .timeline-item {
+                width: 300px;
+            }
+            
+            .notre-histoire .owl-nav {
+                top: -60px;
+            }
+            
+            .notre-histoire .owl-nav button {
+                width: 40px;
+                height: 40px;
+                font-size: 18px !important;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .notre-histoire-title {
+                font-size: 2rem;
+            }
+            
+            .notre-histoire-header {
+                margin-bottom: 40px;
+            }
+            
+            .notre-histoire .owl-nav {
+                position: relative;
+                justify-content: center;
+                top: 0;
+                margin-bottom: 15px;
+            }
+        }
+        
+        /* Decorative elements */
+        .notre-histoire-decoration {
+            position: absolute;
+            opacity: 0.03;
+            font-size: 18rem;
+            color: #3498db;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .decoration-1 {
+            top: -80px;
+            right: -40px;
+            transform: rotate(15deg);
+        }
+        
+        .decoration-2 {
+            bottom: -100px;
+            left: -40px;
+            transform: rotate(-15deg);
+        }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
@@ -1397,20 +1774,20 @@ header.header-inside.regle_header.scrolled span {
 
 
 section.carriere .slide-content a.btn.btn-discover {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-        
-        @media (max-width: 768px) {
-            .contact_form {
-                flex-direction: column;
-            }
-            
-            .contact_form .form-row {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .contact_form .form-group {
-                min-width: 100%;
-            }
-        }
+
+@media (max-width: 768px) {
+  .contact_form {
+    flex-direction: column;
+  }
+
+  .contact_form .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact_form .form-group {
+    min-width: 100%;
+  }
+}
