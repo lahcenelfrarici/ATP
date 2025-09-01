@@ -2167,4 +2167,270 @@ section.Project_detail_page .container {
 section.Project_detail_page .container div {
     width: 49%;
     /* background: #F3F3F3; */
+    border-radius: 10px;
 }
+section.galerie-de-projets h2 {
+    color: #600100;
+}
+
+section.galerie-de-projets {
+    background: #F3F3F3;
+    Colors
+Hex
+Hex
+Background colors
+
+#F3F3F3;
+}
+
+section.galerie-de-projets .container >div:first-child {
+    width: 10;
+    width: 100%;
+}
+
+section.galerie-de-projets .container >div:last-child { width: 49%;}
+
+section.galerie-de-projets .container >div:nth-child(2) {
+    width: 49%;
+}
+
+section.galerie-de-projets .container >div {}
+
+section.galerie-de-projets .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 0;
+}
+section.section--4 .project-title {
+    background: transparent;
+    border: 0;
+}
+  /* Preloader Styles */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+        }
+        
+        .preloader .logo-container {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .preloader .two--sc--img {
+            width: 60px;
+            height: 60px;
+            animation: preloader-pulse 1.5s ease-in-out infinite both;
+            object-fit: contain;
+        }
+        
+        .preloader .spinner {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 5px solid rgba(96, 1, 0, 0.25);
+            border-radius: 50%;
+            border-top-color: #600100;
+            animation: preloader-spin 1.5s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #600100;
+        }
+        
+        .preloader .loading-text {
+            margin-top: 1.5rem;
+            color: #600100;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+        
+        .preloader .progress-bar {
+            width: 260px;
+            height: 10px;
+            background: rgba(96, 1, 0, 0.2);
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            overflow: hidden;
+        }
+        
+        .preloader .progress {
+            height: 100%;
+            width: 0%;
+            background: #600100;
+            border-radius: 5px;
+        }
+        
+        /* Animations */
+        @keyframes preloader-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes preloader-pulse {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        
+        /* Content animation */
+        .content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .pourquoi-nous-carriere .benefit-card {
+    border-radius: 5px;
+    background: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.pourquoi-nous-carriere .benefit-title {
+    color: #151515;
+    font-family: Electrolize;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 128.571% */
+}
+
+.pourquoi-nous-carriere .benefit-description {
+    color: #000;
+    font-family: Electrolize;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.posy_all_offre .job-card {
+  border: 0;
+  background: transparent;
+}
+
+.posy_all_offre .job-card__head{
+  display:flex;
+  height: auto;
+  padding: 21px 35px;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:10px;
+  border-radius:5px 5px 0 0;
+  background:#600100;
+}
+
+.posy_all_offre .job-card__body{
+  border-radius:0 0 5px 5px;
+  background:#F3F3F3;
+  box-shadow:0 4px 17.2px 0 rgba(0,0,0,.06);
+  padding: 30px 35px;
+}
+
+.posy_all_offre .job-card__head ul>li{
+  position:relative;
+  padding-left:.75rem;
+  color: #FFF;
+  font-family: Electrolize;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  color: #FFF;
+  font-family: Electrolize;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.25px; /* 208.929% */
+}
+
+.posy_all_offre .job-card__head ul>li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  width:6px;height:6px;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background:#ffffff66;
+}
+
+.posy_all_offre .job-card__body .badge{
+  color: #600100;
+  font-family: Electrolize;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  font-weight:500;
+  padding:.35rem .6rem;
+  border-radius: 20px;
+  border: 1px solid #000 !important;
+  background: #FFF;
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+.job-card h5 {
+    color: #FFF;
+    font-family: Electrolize;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 75% */
+}
+
+.job-card a {
+    border-radius: 32px !important;
+    background: #FFF;
+    width: 163.346px;
+    height: 57.355px;
+    color: #600100;
+    text-align: center;
+    font-family: Electrolize;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-card__body p {
+    color: #600100;
+    font-family: Electrolize;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.job-card__body .small {
+    color: #600100;
+    font-family: Electrolize;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.posy_all_offre.container.my-4 .row.g-4 {
+    padding: 0 40px;
+}
+.posy_all_offre.container.my-4 {} .posy_all_offre.container.my-4 .row.g-4 {padding: 0 100px;justify-content: space-between;margin: 0 auto;} .posy_all_offre.container.my-4 .row.g-4 >div {width: 529px !important;}

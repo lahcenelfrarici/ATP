@@ -1,4 +1,33 @@
 (function ($) {
+  // Simulate loading progress
+            function simulateLoading() {
+                $(".preloader .progress").animate({ width: "100%" }, 2500);
+                
+                // Hide preloader and show content after delay
+                setTimeout(function() {
+                    $(".preloader").fadeOut(800);
+                    $(".content").addClass("visible");
+                }, 3000);
+            }
+            
+            // Start the loading animation
+            simulateLoading();
+            
+            // Handle reload button click
+            $("#reload-button").click(function() {
+                $(".preloader .progress").css("width", "0");
+                $(".content").removeClass("visible");
+                $(".preloader").fadeIn(400);
+                simulateLoading();
+            });
+            
+            // Fallback in case of issues
+            setTimeout(function() {
+                if ($(".preloader").is(":visible")) {
+                    $(".preloader").fadeOut(500);
+                    $(".content").addClass("visible");
+                }
+            }, 5000);
   if ($('.banner_bread').length) {
     // If it exists, add the 'regle_header' class to the <header> tag
     $('header').addClass('regle_header');
