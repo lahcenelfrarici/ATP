@@ -184,7 +184,7 @@ body {
 }
 
 /* Overlay for better text visibility */
-.slide-overlay {
+/* .slide-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -192,7 +192,27 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  height: 700px;
+} */
+ .owl-item.active.center .timeline-item  .timeline-content {display: block;position: absolute;bottom: -30%;/* background:red; */width: 100vh;left: auto;right: auto;margin: auto;text-align: center;display: flex;justify-content: center;align-items: center;margin-top: 17%;}
+
+.owl-item.active.center .timeline-item {
+    position: initial;
 }
+.pourquoi-nous-rejoindre .trier__3_elemnt >div {
+    width: 32%;
+}
+
+.benefits-container.trier__3_elemnt {
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+
+.notre-histoire .owl-carousel .owl-stage-outer {
+    padding: 30px 0;
+}
+
 
 /* Owl Nav Customization */
 #slider--animate .owl-nav {
@@ -340,6 +360,9 @@ button.btn.btn-contact {
   justify-content: space-between;
   gap: 0 15px;
 }
+button.btn.btn-contact a{
+    color: #fff;
+}
 
 .right--contact-multi-langue button#langDropdown {
   background-color: #600100;
@@ -393,6 +416,9 @@ body:not(.path-frontpage) header.header-inside.scrolled {
 body:not(.path-frontpage) header#header-inside button.btn.btn-contact {
   color: #600100;
 }
+body:not(.path-frontpage) header#header-inside button.btn.btn-contact a{
+ color: #600100;
+}
 
 body:not(.path-frontpage) header.header-inside {
   border-bottom: 1px solid #AEAEAE;
@@ -432,6 +458,9 @@ header.header-inside.scrolled button.btn.btn-contact {
   border: 1px solid #fff;
   background-color: #fff;
   color: #600100;
+}
+header.header-inside.scrolled button.btn.btn-contact a{
+   color: #600100;  
 }
 
 .section--2-modal .video-wrapper {
@@ -952,6 +981,9 @@ body:not(.path-frontpage) header.header-inside.regle_header.scrolled a.navbar-br
 #select__list select {
   background: #600100;
   color: #fff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5.83984 9.58965L11.4998 15.2496L17.1598 9.58965L16.4498 8.88965L11.4998 13.8396L6.54984 8.88965L5.83984 9.58965Z" fill="white"/></svg>');
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
 .sc---prj-2-filter .form-control::placeholder {
@@ -1218,6 +1250,7 @@ header.header-inside.regle_header.scrolled span {
   width: 100%;
   text-align: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .contact_form .btn-submit:hover {
@@ -1782,11 +1815,22 @@ section.notre-histoire .title--sc p {
 }
 
 .notre-histoire .owl-nav button:hover {
-  background: #3498db !important;
+  background: transparent !important;
   color: #fff !important;
   transform: scale(1.1);
 }
-
+.cible___title {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  color: #FFF;
+  font-family: Electrolize;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
 .notre-histoire .owl-dots {
   margin-top: 20px;
   display: flex;
@@ -2454,7 +2498,7 @@ section.section--4 .project-title {
 
 .posy_all_offre .job-card__head ul>li {
   position: relative;
-  padding-left: .75rem;
+
   color: #FFF;
   font-family: Electrolize;
   font-size: 12px;
@@ -2480,7 +2524,7 @@ section.section--4 .project-title {
   height: 6px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: #ffffff66;
+  background: transparent;
 }
 
 .posy_all_offre .job-card__body .badge {
@@ -2540,11 +2584,11 @@ section.section--4 .project-title {
 }
 
 .job-card__body .small {
-  color: #600100;
+  color: #600100 !important;
   font-family: Electrolize;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: 24px;
   /* 150% */
 }

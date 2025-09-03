@@ -55,75 +55,7 @@
   <!-- Header Section -->
   <!-- Header Inside Slider -->
    
-  <header class="header-inside" id="header-inside">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand logo__1" href="#"> <img class="two--sc--img" src="./assets/images/logo.png">
-        </a>
-        <a class="navbar-brand logo__2" href="#"> <img class="two--sc--img" src="./assets/images/logo-2.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Agence</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Carrières</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contrôle</a>
-            </li>
-          </ul>
-        </div>
-        <div class="right--contact-multi-langue">
-          <div class="d-flex align-items-center gap-3">
-            <!-- Language Dropdown -->
-            <div class="dropdown">
-              <button class="btn btn-lang dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                FR
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="langDropdown">
-                <li><a class="dropdown-item" href="#">EN</a></li>
-                <li><a class="dropdown-item" href="#">ES</a></li>
-                <li><a class="dropdown-item" href="#">DE</a></li>
-              </ul>
-            </div>
-
-            <!-- Contact Button -->
-            <button class="btn btn-contact">
-              <span class="contact-text">Contact</span>
-              <span class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <rect width="28" height="28" rx="14" fill="#600100" />
-                  <g clip-path="url(#clip0_6230_84)">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M14.3802 6.13867C14.3802 7.098 14.5514 8.04792 14.8841 8.93422C15.2168 9.82052 15.7044 10.6258 16.3191 11.3042C16.9338 11.9825 17.6635 12.5206 18.4667 12.8877C19.2698 13.2548 20.1307 13.4438 21 13.4438V13.4748H21V14.5248H21V14.5557C20.1307 14.5557 19.2698 14.7447 18.4667 15.1118C17.6635 15.4789 16.9338 16.017 16.3191 16.6954C15.7044 17.3737 15.2168 18.179 14.8841 19.0653C14.5514 19.9516 14.3802 20.9015 14.3802 21.8609H13.3067C13.3067 17.8982 15.745 15.2686 19.0285 14.5248L7 14.5248L7 13.4748L19.0286 13.4748C15.745 12.731 13.3067 10.1014 13.3067 6.13867H14.3802Z"
-                      fill="#FAFFF4" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_6230_84">
-                      <rect width="14" height="14" fill="white" transform="translate(7 7)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </nav>
-  </header>
+<script src="header.js"></script>
 
   <!-- Owl Carousel Slider with ID -->
 
@@ -149,7 +81,7 @@
             <div class="filter-option">
               <div class="filter-label">Lieu</div>
               <select class="form-select">
-                <option>Tous</option>
+                <option>Lieu</option>
               </select>
             </div>
           </div>
@@ -157,7 +89,7 @@
             <div class="filter-option">
               <div class="filter-label">Type</div>
               <select class="form-select">
-                <option>Tous</option>
+                <option>Type</option>
               </select>
             </div>
           </div>
@@ -165,7 +97,7 @@
             <div class="filter-option">
               <div class="filter-label">Etat</div>
               <select class="form-select">
-                <option>Tous</option>
+                <option>État</option>
               </select>
             </div>
           </div>
@@ -181,7 +113,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="project-card card">
-            <a href="#">
+            <a href="/Project_detail_page.html">
               <img src="./assets/images/new1.png" class="project-img card-img-top" alt="Projet architectural moderne">
               <div class="card-body">
                 <div class="project-category">Glass Tower Complex</div>
@@ -446,7 +378,15 @@
 
   <!-- Your custom JS scripts -->
   <script src="./assets/js/scripts.js"></script>
-
+  <script>
+    // Cette fonction s'exécutera après le chargement du header
+    $(document).ready(function () {
+      if ($('.banner_bread').length) {
+        // Si l'élément existe, ajouter la classe 'regle_header' à la balise <header>
+        $('.header-inside').addClass('regle_header');
+      }
+    });
+  </script>
   <!--  -->
 
 </body>
