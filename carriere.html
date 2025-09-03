@@ -275,7 +275,7 @@
               </div>
             </article>
           </div>
-           <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <article class="job-card h-100">
               <!-- Top (red) -->
               <div class="job-card__head d-flex flex-column align-items-start">
@@ -347,7 +347,7 @@
               </div>
             </article>
           </div>
-           <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <article class="job-card h-100">
               <!-- Top (red) -->
               <div class="job-card__head d-flex flex-column align-items-start">
@@ -419,7 +419,7 @@
               </div>
             </article>
           </div>
-           <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <article class="job-card h-100">
               <!-- Top (red) -->
               <div class="job-card__head d-flex flex-column align-items-start">
@@ -491,7 +491,7 @@
               </div>
             </article>
           </div>
-           <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <article class="job-card h-100">
               <!-- Top (red) -->
               <div class="job-card__head d-flex flex-column align-items-start">
@@ -568,40 +568,55 @@
     </div>
   </section>
   <!-- Modal Structure -->
-<div class="modal fade" id="modal___carrire" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabel">Postuler pour le Poste</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="fullName" class="form-label">Nom complet</label>
-            <input type="text" class="form-control" id="fullName" placeholder="Votre nom complet">
+  <div class="modal fade" id="modal___carrire" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="wrapper--modal">
+            <h5 class="modal-title" id="modalLabel">Postuler pour le Poste</h5>
+            <p>Postulez en quelques étapes seulement.</p>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="votre@email.com">
-          </div>
-          <div class="mb-3">
-            <label for="phoneNumber" class="form-label">Numéro de téléphone</label>
-            <input type="text" class="form-control" id="phoneNumber" placeholder="+212 ...">
-          </div>
-          <div class="mb-3">
-            <label for="resume" class="form-label">Résumé</label>
-            <input type="file" class="form-control" id="resume" accept=".pdf">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-primary">Postuler</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Nom complet</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Votre nom complet">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="votre@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Numéro de téléphone</label>
+              <input type="text" class="form-control" id="phoneNumber" placeholder="+212 ...">
+            </div>
+            <div class="mb-3 cible_this_class">
+              <label for="resume" class="form-label">Résumé</label>
+
+              <div class="upload-area">
+                <span class="upload-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="49"
+                    viewBox="0 0 48 49" fill="none">
+                    <path
+                      d="M14.0011 32.5001C12.0312 32.5023 10.1296 31.7775 8.66086 30.4647C7.19209 29.1519 6.25935 27.3433 6.04135 25.3854C5.82334 23.4275 6.33539 21.458 7.47939 19.8543C8.6234 18.2505 10.3189 17.1253 12.2411 16.6941C11.685 14.1002 12.182 11.3917 13.6228 9.16435C15.0637 6.93698 17.3303 5.37321 19.9241 4.81705C22.5179 4.2609 25.2265 4.75791 27.4538 6.19875C29.6812 7.63959 31.245 9.90624 31.8011 12.5001H32.0011C34.481 12.4976 36.8734 13.4166 38.7138 15.0788C40.5542 16.741 41.7113 19.0277 41.9605 21.4951C42.2098 23.9624 41.5333 26.4344 40.0625 28.431C38.5917 30.4277 36.4314 31.8066 34.0011 32.3001M30.0011 26.5001L24.0011 20.5001M24.0011 20.5001L18.0011 26.5001M24.0011 20.5001V44.5001"
+                      stroke="#600100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+
+                <p>Glissez-déposez votre PDF ici</p>
+                <input type="file" class="form-control" id="resume" accept=".pdf" placeholder="Choisir un fichier">
+                <h6 class="choose-file-btn">PDF uniquement</h6>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary">Postuler</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <footer class="footer---btm bg-dark-red text-white pt-5 pb-3">
