@@ -299,17 +299,47 @@
     background: #600100;
 
   }
+
   .posy_all_offre .job-card__head {
     padding: 20px;
-}
+  }
 
-.job-card h5 {
+  .job-card h5 {
     font-size: 20px;
-}
+  }
 
-.job-card a {
+  .job-card a {
     width: auto;
     height: auto;
+  }
+
+  .notre-histoire .timeline-item {
+    width: 300px;
+    margin: 0;
+  }
+
+  .notre-histoire .owl-item {
+    display: flex;
+  }
+
+  .notre-histoire .owl-carousel {
+    position: relative;
+    width: auto;
+    margin: auto;
+  }
+  .notre-histoire .owl-carousel .owl-stage-outer {
+    padding-top: 0;
+}
+
+.notre-histoire-header {
+    margin-bottom: 0;
+}
+
+.notre-histoire .timeline-item {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0;
 }
 }
 
