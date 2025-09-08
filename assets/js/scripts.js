@@ -36,32 +36,34 @@
     }
   }, 5000);
 
-  $('.notre-histoire .owl-carousel').owlCarousel({
-    loop: true,
-    margin: 25,
-    nav: true,
-    navText: [
-
-      '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34" fill="none"><path d="M17.4479 2.58854L3.28125 16.7552L17.4479 30.9219" stroke="#5D0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-      '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34" fill="none"><path d="M2.55599 2.58854L16.7227 16.7552L2.55599 30.9219" stroke="#5D0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-    ],
-    dots: false,
-    autoplay: false,
-    center: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      1200: {
-        items: 3
-      }
+$('.notre-histoire .owl-carousel').owlCarousel({
+  loop: true,
+  margin: 25,
+  nav: true,
+  navText: [
+    '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34" fill="none"><path d="M17.4479 2.58854L3.28125 16.7552L17.4479 30.9219" stroke="#5D0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34" fill="none"><path d="M2.55599 2.58854L16.7227 16.7552L2.55599 30.9219" stroke="#5D0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  ],
+  dots: false,
+  autoplay: false,
+  center: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+        center: false,
+    },
+    768: {
+      items: 1,
+        center: false,
+    },
+    1200: {
+      items: 3
     }
-  });
+  }
+});
+
   $('.section--5 .owl-carousel').owlCarousel({
     loop: true,
     margin: 30,

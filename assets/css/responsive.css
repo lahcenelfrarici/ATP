@@ -56,6 +56,7 @@
     font-size: 22px;
   }
 }
+
 @media (max-width: 768px) {
   .counter-container {
     flex-direction: column;
@@ -80,3 +81,236 @@
     padding: 50px 0;
   }
 }
+
+@media (max-width: 1119px) {
+  .counter-value {
+    font-size: 3rem;
+  }
+
+  .counter-item {
+    min-width: 30%;
+  }
+
+  .counter-container-1 {
+    width: 20%;
+  }
+
+  .counter-container {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .section--2-modal .row {
+    flex-direction: column;
+    gap: 30px 0;
+  }
+
+
+
+  .section--2-modal .row>div {
+    width: 100%;
+    margin: 0;
+  }
+
+  .section--2-modal .row>div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section--2-modal .row .text-center {
+    padding: 0;
+  }
+
+  .col-md-6.text-center {}
+
+  .section--2-modal .video-wrapper {
+    width: 100%;
+  }
+
+  .vertical---sc {
+    flex-direction: column;
+  }
+
+  .counter-container-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .counter-container {
+    width: 100%;
+  }
+
+  .counter-container-1 p {
+    text-align: center;
+  }
+
+  section.section--4 {}
+
+  section.section--4 .row {
+    flex-direction: column;
+  }
+
+  section.section--4 .row>div {
+    width: 100%;
+  }
+
+  .footer---btm .row>div {
+    width: 100%;
+  }
+
+  .footer---btm .row {
+    text-align: center;
+  }
+
+  .footer---btm p {
+    text-align: center;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .section--2-modal .row {
+
+    gap: 20px 0;
+  }
+
+  #slider--animate .slide-title {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  #slider--animate .slide-content {
+    padding-bottom: 20%;
+  }
+
+  .section--2-modal .row .text-center {
+    padding: 0 15px;
+  }
+
+  .sc---prj-2-filter .form-control {
+    width: 100%;
+  }
+
+  .pourquoi-nous-rejoindre .benefit-card {
+    width: 100%;
+  }
+
+  .pourquoi-nous-rejoindre .benefit-card {
+    flex-direction: column;
+  }
+
+  .content--our {
+    width: 100%;
+  }
+
+  .notre-equipe-content {
+
+    gap: 20px 0;
+  }
+
+  section.Project_detail_page .container {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+
+  section.Project_detail_page .container div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .Project_detail_page .project-title {
+    font-size: 18px;
+  }
+
+  .Project_detail_page_img svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title--sc h2 {
+    font-size: 40px;
+  }
+
+  .wrapper_img img {
+    width: 100%;
+  }
+
+  section.galerie-de-projets .container {
+    gap: 10px 0;
+    justify-content: space-between;
+  }
+
+  section.contact_form .container {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  .contact_form .form-container {
+    width: 100%;
+  }
+
+  .contact_form .info-container {
+    width: 100%;
+  }
+
+  .pourquoi-nous-rejoindre .benefits-container {}
+
+  .pourquoi-nous-rejoindre .trier__3_elemnt>div {
+    width: 100%;
+  }
+
+  .posy_all_offre.container.my-4 .row.g-4>div {
+    width: 100% !important;
+  }
+
+  .pourquoi-nous-rejoindre .trier__3_elemnt>div {
+    width: 100%;
+  }
+
+  .posy_all_offre.container.my-4 .row.g-4>div {
+    width: 100% !important;
+  }
+
+  .posy_all_offre.container.my-4 .row.g-4 {
+    padding: 0;
+  }
+
+  .posy_all_offre.container.my-4 .row.g-4>div {
+    padding: 0;
+  }
+
+  .posy_all_offre.container.my-4 {
+    padding: 0;
+  }
+
+  .right--contact-multi-langue {
+    display: none;
+  }
+
+  .header-inside button.navbar-toggler {
+    background-color: #fff;
+  }
+
+  body:not(.path-frontpage) header#header-inside {
+    background: #600100;
+
+  }
+  .posy_all_offre .job-card__head {
+    padding: 20px;
+}
+
+.job-card h5 {
+    font-size: 20px;
+}
+
+.job-card a {
+    width: auto;
+    height: auto;
+}
+}
+
+@media (max-width: 767px) {}
