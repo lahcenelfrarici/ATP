@@ -194,23 +194,39 @@ body {
   z-index: 1;
   height: 700px;
 }
- .owl-item.active.center .timeline-item  .timeline-content {display: block;position: absolute;bottom: -30%;/* background:red; */width: 100vh;left: auto;right: auto;margin: auto;text-align: center;display: flex;justify-content: center;align-items: center;margin-top: 17%;}
+
+.owl-item.active.center .timeline-item .timeline-content {
+  display: block;
+  position: absolute;
+  bottom: -30%;
+  /* background:red; */
+  width: 100vh;
+  left: auto;
+  right: auto;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17%;
+}
 
 .owl-item.active.center .timeline-item {
-    position: initial;
+  position: initial;
 }
-.pourquoi-nous-rejoindre .trier__3_elemnt >div {
-    width: 32%;
+
+.pourquoi-nous-rejoindre .trier__3_elemnt>div {
+  width: 32%;
 }
 
 .benefits-container.trier__3_elemnt {
-    gap: 25px;
-    justify-content: flex-start;
+  gap: 25px;
+  justify-content: flex-start;
 }
 
 
 .notre-histoire .owl-carousel .owl-stage-outer {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 
@@ -347,7 +363,7 @@ p {
 }
 
 .header-inside .nav-link {
-  color: #D2D2D2;
+  color: #fff;
 }
 
 button.btn.btn-contact {
@@ -360,8 +376,9 @@ button.btn.btn-contact {
   justify-content: space-between;
   gap: 0 15px;
 }
-button.btn.btn-contact a{
-    color: #fff;
+
+button.btn.btn-contact a {
+  color: #fff;
 }
 
 .right--contact-multi-langue button#langDropdown {
@@ -416,8 +433,9 @@ body:not(.path-frontpage) header.header-inside.scrolled {
 body:not(.path-frontpage) header#header-inside button.btn.btn-contact {
   color: #600100;
 }
-body:not(.path-frontpage) header#header-inside button.btn.btn-contact a{
- color: #600100;
+
+body:not(.path-frontpage) header#header-inside button.btn.btn-contact a {
+  color: #600100;
 }
 
 body:not(.path-frontpage) header.header-inside {
@@ -459,8 +477,9 @@ header.header-inside.scrolled button.btn.btn-contact {
   background-color: #fff;
   color: #600100;
 }
-header.header-inside.scrolled button.btn.btn-contact a{
-   color: #600100;  
+
+header.header-inside.scrolled button.btn.btn-contact a {
+  color: #600100;
 }
 
 .section--2-modal .video-wrapper {
@@ -1819,6 +1838,7 @@ section.notre-histoire .title--sc p {
   color: #fff !important;
   transform: scale(1.1);
 }
+
 .cible___title {
   display: flex;
   align-items: center;
@@ -1831,6 +1851,7 @@ section.notre-histoire .title--sc p {
   line-height: 24px;
   /* 150% */
 }
+
 .notre-histoire .owl-dots {
   margin-top: 20px;
   display: flex;
@@ -2618,27 +2639,31 @@ section.contact_form .container {
   display: flex;
   justify-content: space-between;
 }
+
 #modal___carrire .modal-content {
-    border-radius: 5px;
-    background: #F3F3F3;
-    padding: 30px;
+  border-radius: 5px;
+  background: #F3F3F3;
+  padding: 30px;
 }
+
 #modal___carrire .modal-dialog {
-    max-width: 870px;
-    /* padding: 30px; */
+  max-width: 870px;
+  /* padding: 30px; */
 }
 
 #modal___carrire .modal-footer button {
-    width: 100%;
-    padding: 16px 32px;
-    border: 0;
+  width: 100%;
+  padding: 16px 32px;
+  border: 0;
 }
+
 #modal___carrire .modal-content .modal-footer {
-    border: 0;
+  border: 0;
 }
+
 #modal___carrire .modal-content .modal-header {
-    border-bottom: 0;
-    align-items: start;
+  border-bottom: 0;
+  align-items: start;
 }
 
 #modal___carrire .modal-content .modal-body {}
@@ -2646,49 +2671,53 @@ section.contact_form .container {
 #modal___carrire .modal-content .modal-footer {}
 
 #modal___carrire .modal-content .modal-header h5 {
-    color: #000;
-    font-family: Electrolize;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29.25px; /* 121.875% */
+  color: #000;
+  font-family: Electrolize;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.25px;
+  /* 121.875% */
 }
 
 #modal___carrire .modal-content .modal-body label {
-    color: #000;
-    font-family: Electrolize;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29.25px; /* 182.813% */
+  color: #000;
+  font-family: Electrolize;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.25px;
+  /* 182.813% */
 }
 
 #modal___carrire .modal-content .modal-body input::placeholder {
-    color: #999;
-    font-family: Electrolize;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: #999;
+  font-family: Electrolize;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #modal___carrire .modal-content .modal-body input {
-    border-radius: 30px;
-    background: #FFF;
-    padding: 16px 24px;
+  border-radius: 30px;
+  background: #FFF;
+  padding: 16px 24px;
 }
 
 #modal___carrire .modal-footer button {
-    border-radius: 144px;
-    background: #600100;
-    color: #FFF;
-    text-align: center;
+  border-radius: 144px;
+  background: #600100;
+  color: #FFF;
+  text-align: center;
 
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 150% */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 150% */
 }
+
 /* Style for the file upload container */
 .cible_this_class .custom-file-upload {
   position: relative;
@@ -2732,12 +2761,10 @@ section.contact_form .container {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 200% */
+  line-height: 24px;
+  /* 200% */
 }
 
-.cible_this_class .choose-file-btn:hover {
-  background-color: #9d3737;
-}
 
 .cible_this_class .file-input {
   display: none;
@@ -2749,43 +2776,87 @@ section.contact_form .container {
   color: #777;
   margin: 0;
 }
+
 #modal___carrire .modal-content .modal-body .form-control[type=file] {
-    border-radius: 30px;
-    background: #FFF;
-    padding: 16px 24px;
-    border-radius: 144px;
-    background: #5D5D5D;
-    width: auto;
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    display: flex
-;
-    width: 200px;
-    padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  border-radius: 30px;
+  background: #FFF;
+  padding: 16px 24px;
+  border-radius: 144px;
+  background: #5D5D5D;
+  width: auto;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  width: 200px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
 #modal___carrire .modal-content .modal-body {
-    padding: 0;
+  padding: 0;
 }
 
 .cible_this_class .upload-area {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 #modal___carrire .modal-content {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 
 #modal___carrire .modal-content .modal-header {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 
 #modal___carrire .modal-content .modal-body input {
-    padding: 12px 24px;
 }
+
+body:not(.path-frontpage) header#header-inside:not(.scrolled) .list___prj .nav-link {
+  color: #600100;
+  border-radius: 10000px;
+  background: #FFF;
+  padding: 5px 20px !important;
+  margin: 5px 10px;
+}
+
+.custom-file-upload {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  color: #333;
+  padding-bottom: 0;
+  border-radius: 30px;
+  background: #FFF;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload .upload-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff !important;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.custom-file-upload .note {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+.custom-file-upload p { text-align: center; } .custom-file-upload input { border-radius: 30px !important; background: #FFF; }
